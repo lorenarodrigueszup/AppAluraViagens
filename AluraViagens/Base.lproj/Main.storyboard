@@ -1,0 +1,831 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OIK-7j-UAW">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Fu2-o2-jyF">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="OIK-7j-UAW" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TiH-mN-P1I">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Iuc-Dm-wgd" kind="relationship" relationship="rootViewController" id="yT7-ib-ywp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zN8-nO-1Nb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1703" y="116"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="59Y-ie-jls">
+            <objects>
+                <tabBarController id="Iuc-Dm-wgd" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="6xV-1j-rxV"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oTs-m0-qnZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="vjb-BH-Erc"/>
+                        <segue destination="th0-gy-LZB" kind="relationship" relationship="viewControllers" id="nj0-Jd-cac"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bZb-4E-9ct" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-829" y="118"/>
+        </scene>
+        <!--procurar-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AluraViagens" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dce-hC-YPn" userLabel="View Header">
+                                <rect key="frame" x="0.0" y="28" width="375" height="145"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="alura viagens" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XBJ-d9-rg7">
+                                        <rect key="frame" x="132" y="8" width="112" height="25"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="31"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ESPECIAL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZE3-Kq-SZp">
+                                        <rect key="frame" x="32" y="47" width="89.5" height="27.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="40"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BRASIL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o6f-U8-onY">
+                                        <rect key="frame" x="32" y="82.5" width="79.5" height="31.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="23"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="40"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="XBJ-d9-rg7" firstAttribute="centerX" secondItem="dce-hC-YPn" secondAttribute="centerX" id="9oe-LR-D6C"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="o6f-U8-onY" secondAttribute="trailing" constant="20" symbolic="YES" id="OnF-c7-fkI"/>
+                                    <constraint firstItem="o6f-U8-onY" firstAttribute="top" secondItem="ZE3-Kq-SZp" secondAttribute="bottom" constant="8" id="SDf-7R-Jkq"/>
+                                    <constraint firstAttribute="height" constant="145" id="SON-9u-irZ">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="250"/>
+                                    </constraint>
+                                    <constraint firstItem="XBJ-d9-rg7" firstAttribute="top" secondItem="dce-hC-YPn" secondAttribute="top" constant="8" id="YDv-3f-AO4"/>
+                                    <constraint firstItem="o6f-U8-onY" firstAttribute="leading" secondItem="dce-hC-YPn" secondAttribute="leading" constant="32" id="a89-78-oUJ"/>
+                                    <constraint firstItem="ZE3-Kq-SZp" firstAttribute="top" secondItem="XBJ-d9-rg7" secondAttribute="bottom" constant="14" id="eie-VN-YPE"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ZE3-Kq-SZp" secondAttribute="trailing" constant="20" symbolic="YES" id="lDc-S2-gcE"/>
+                                    <constraint firstItem="ZE3-Kq-SZp" firstAttribute="leading" secondItem="dce-hC-YPn" secondAttribute="leading" constant="32" id="tBs-YG-eAH"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6MC-xy-i3c" userLabel="View Button Hoteis">
+                                <rect key="frame" x="33" y="151" width="100" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39k-ui-0QD">
+                                        <rect key="frame" x="29" y="10" width="42" height="30"/>
+                                        <state key="normal" title="hotéis">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="25"/>
+                                        </variation>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="OeI-33-yDs">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="75"/>
+                                    </constraint>
+                                    <constraint firstItem="39k-ui-0QD" firstAttribute="centerY" secondItem="6MC-xy-i3c" secondAttribute="centerY" id="XBh-IQ-Jrf"/>
+                                    <constraint firstItem="39k-ui-0QD" firstAttribute="centerX" secondItem="6MC-xy-i3c" secondAttribute="centerX" id="oxO-iL-1oF"/>
+                                    <constraint firstAttribute="width" constant="100" id="zjI-LP-TVq">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                                    </constraint>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AHq-yN-Hyb" userLabel="View Button Pacotes">
+                                <rect key="frame" x="242" y="151" width="100" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KdP-q7-RW0">
+                                        <rect key="frame" x="22.5" y="10" width="55" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="pacotes">
+                                            <color key="titleColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="25"/>
+                                        </variation>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="17e-iu-j6Q">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                                    </constraint>
+                                    <constraint firstItem="KdP-q7-RW0" firstAttribute="centerY" secondItem="AHq-yN-Hyb" secondAttribute="centerY" id="63l-A0-Bbd"/>
+                                    <constraint firstAttribute="height" constant="50" id="H8g-Ks-avj">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="75"/>
+                                    </constraint>
+                                    <constraint firstItem="KdP-q7-RW0" firstAttribute="centerX" secondItem="AHq-yN-Hyb" secondAttribute="centerX" id="ht5-mk-HM7"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1V8-yK-ffL">
+                                <rect key="frame" x="0.0" y="209" width="375" height="409"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="175" id="Bed-Bo-NqB" customClass="TableViewCell" customModule="AluraViagens" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="175"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Bed-Bo-NqB" id="fC5-i7-neo">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="174.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYq-5U-CCq">
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="qv2-i7-JEm"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="16"/>
+                                                    <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular-widthClass=regular">
+                                                        <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="28"/>
+                                                    </variation>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DYu-xD-5jS">
+                                                    <rect key="frame" x="15" y="25" width="345" height="126"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ylX-A6-qZW">
+                                                    <rect key="frame" x="323" y="152" width="37" height="21"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
+                                                    <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular-widthClass=regular">
+                                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="25"/>
+                                                    </variation>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZS3-jm-an7" userLabel="Label Quantidade">
+                                                    <rect key="frame" x="15" y="153" width="37" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="NZS-jT-Rhh"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
+                                                    <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular-widthClass=regular">
+                                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="25"/>
+                                                    </variation>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ylX-A6-qZW" firstAttribute="top" secondItem="DYu-xD-5jS" secondAttribute="bottom" constant="1.5" id="9Rw-5E-VC0"/>
+                                                <constraint firstItem="ZS3-jm-an7" firstAttribute="leading" secondItem="fC5-i7-neo" secondAttribute="leading" constant="15" id="Gjl-xS-aTW"/>
+                                                <constraint firstAttribute="bottom" secondItem="DYu-xD-5jS" secondAttribute="bottom" constant="23.5" id="IPO-oP-1NR"/>
+                                                <constraint firstItem="ZS3-jm-an7" firstAttribute="top" secondItem="DYu-xD-5jS" secondAttribute="bottom" constant="2.5" id="Pna-OG-nrt"/>
+                                                <constraint firstItem="ylX-A6-qZW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fC5-i7-neo" secondAttribute="leading" constant="20" symbolic="YES" id="RFc-FW-GbU"/>
+                                                <constraint firstItem="DYu-xD-5jS" firstAttribute="leading" secondItem="fC5-i7-neo" secondAttribute="leading" constant="15" id="Zdf-Am-AqW"/>
+                                                <constraint firstItem="ZS3-jm-an7" firstAttribute="leading" secondItem="DYu-xD-5jS" secondAttribute="leading" id="aqa-tv-Nuz"/>
+                                                <constraint firstItem="fYq-5U-CCq" firstAttribute="leading" secondItem="fC5-i7-neo" secondAttribute="leading" constant="15" id="btc-TL-Gt5"/>
+                                                <constraint firstAttribute="trailing" secondItem="fYq-5U-CCq" secondAttribute="trailing" constant="15" id="gLI-4v-sPP"/>
+                                                <constraint firstAttribute="trailing" secondItem="DYu-xD-5jS" secondAttribute="trailing" constant="15" id="mgH-qb-CYR"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ZS3-jm-an7" secondAttribute="trailing" constant="20" symbolic="YES" id="pLf-Ma-qDq"/>
+                                                <constraint firstItem="DYu-xD-5jS" firstAttribute="top" secondItem="fYq-5U-CCq" secondAttribute="bottom" constant="4" id="pty-uS-lXg"/>
+                                                <constraint firstItem="fYq-5U-CCq" firstAttribute="top" secondItem="fC5-i7-neo" secondAttribute="top" id="rCn-mT-SsQ"/>
+                                                <constraint firstAttribute="bottom" secondItem="ylX-A6-qZW" secondAttribute="bottom" constant="1.5" id="stz-ur-IEX"/>
+                                                <constraint firstAttribute="trailing" secondItem="ylX-A6-qZW" secondAttribute="trailing" constant="15" id="t9n-ev-x9j"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imagemViagem" destination="DYu-xD-5jS" id="dSD-E2-4JB"/>
+                                            <outlet property="labelPreco" destination="ylX-A6-qZW" id="pGZ-8T-7gM"/>
+                                            <outlet property="labelQantidadeDias" destination="ZS3-jm-an7" id="9qN-eH-QNT"/>
+                                            <outlet property="labelTitulo" destination="fYq-5U-CCq" id="Bg0-OB-DUA"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dce-hC-YPn" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="8n2-VF-hIW"/>
+                            <constraint firstItem="6MC-xy-i3c" firstAttribute="top" secondItem="dce-hC-YPn" secondAttribute="bottom" constant="-22" id="GKE-4E-ilA">
+                                <variation key="heightClass=regular-widthClass=regular" constant="-37"/>
+                            </constraint>
+                            <constraint firstItem="dce-hC-YPn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="KL7-Cb-ZDk"/>
+                            <constraint firstItem="1V8-yK-ffL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="QSl-cM-5B7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AHq-yN-Hyb" secondAttribute="trailing" constant="33" id="Zof-SH-Wk8">
+                                <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                            </constraint>
+                            <constraint firstItem="1V8-yK-ffL" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="iQx-e0-2O1"/>
+                            <constraint firstItem="AHq-yN-Hyb" firstAttribute="top" secondItem="dce-hC-YPn" secondAttribute="bottom" constant="-22" id="lF0-XF-0Tf">
+                                <variation key="heightClass=regular-widthClass=regular" constant="-37"/>
+                            </constraint>
+                            <constraint firstItem="dce-hC-YPn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tan-0u-gUC"/>
+                            <constraint firstItem="1V8-yK-ffL" firstAttribute="top" secondItem="6MC-xy-i3c" secondAttribute="bottom" constant="8" symbolic="YES" id="uKq-iJ-Thl"/>
+                            <constraint firstItem="1V8-yK-ffL" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="w8d-pP-uVi"/>
+                            <constraint firstItem="6MC-xy-i3c" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="33" id="xoD-H8-fEj">
+                                <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                            </constraint>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="procurar" image="icon_search" id="YU3-Nz-bKR"/>
+                    <connections>
+                        <outlet property="tabelaViagens" destination="1V8-yK-ffL" id="A1P-G4-STV"/>
+                        <outlet property="viewHoteis" destination="6MC-xy-i3c" id="qyq-rL-0yF"/>
+                        <outlet property="viewPacotes" destination="AHq-yN-Hyb" id="zlb-yN-qyv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="90" y="118.30985915492958"/>
+        </scene>
+        <!--pacotes-->
+        <scene sceneID="Ea9-Ks-DDJ">
+            <objects>
+                <viewController id="th0-gy-LZB" customClass="PacotesViagensViewController" customModule="AluraViagens" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TXN-va-LGh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="72o-u5-Dtx">
+                                <rect key="frame" x="16" y="20" width="343" height="598"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pacotes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9b0-wb-hoM">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="33"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="24"/>
+                                        <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="38"/>
+                                        </variation>
+                                    </label>
+                                    <searchBar contentMode="redraw" searchBarStyle="minimal" text=" " translatesAutoresizingMaskIntoConstraints="NO" id="325-Hm-Nfs">
+                                        <rect key="frame" x="0.0" y="36" width="343" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="hHn-96-q9B"/>
+                                        </constraints>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </searchBar>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6 pacotes encontrados" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M9E-gw-dZ8">
+                                        <rect key="frame" x="0.0" y="74" width="343" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="pmS-aH-hAL">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                                            </constraint>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                        <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="30"/>
+                                        </variation>
+                                    </label>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7nO-3z-HT9">
+                                        <rect key="frame" x="0.0" y="107" width="343" height="491"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ciy-H5-gX7">
+                                            <size key="itemSize" width="135" height="249"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" reuseIdentifier="celulaPacote" id="z6J-7O-TVw" customClass="PacoteViagemCollectionViewCell" customModule="AluraViagens" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="135" height="249"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                    <rect key="frame" x="0.0" y="0.0" width="135" height="249"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JSh-Qg-4kV">
+                                                            <rect key="frame" x="0.0" y="0.0" width="135" height="100"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="100" id="P53-Ly-Rhs">
+                                                                    <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                                                                </constraint>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yv4-bK-11k">
+                                                            <rect key="frame" x="0.0" y="108" width="135" height="17"/>
+                                                            <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="12"/>
+                                                            <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8C-5Q-Apf">
+                                                            <rect key="frame" x="0.0" y="129" width="135" height="15.5"/>
+                                                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="11"/>
+                                                            <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q2b-R5-h8h">
+                                                            <rect key="frame" x="0.0" y="147.5" width="135" height="15.5"/>
+                                                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="11"/>
+                                                            <color key="textColor" red="0.0" green="0.54901960780000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </view>
+                                                <constraints>
+                                                    <constraint firstItem="JSh-Qg-4kV" firstAttribute="leading" secondItem="z6J-7O-TVw" secondAttribute="leading" id="4BD-I1-JyB"/>
+                                                    <constraint firstItem="Yv4-bK-11k" firstAttribute="top" secondItem="JSh-Qg-4kV" secondAttribute="bottom" constant="8" id="DbV-tX-8Ip"/>
+                                                    <constraint firstItem="h8C-5Q-Apf" firstAttribute="leading" secondItem="z6J-7O-TVw" secondAttribute="leading" id="EJw-QD-mYP"/>
+                                                    <constraint firstAttribute="trailing" secondItem="h8C-5Q-Apf" secondAttribute="trailing" id="EhH-Pw-fCB"/>
+                                                    <constraint firstAttribute="trailing" secondItem="q2b-R5-h8h" secondAttribute="trailing" id="Fvl-3E-ORV"/>
+                                                    <constraint firstAttribute="trailing" secondItem="JSh-Qg-4kV" secondAttribute="trailing" id="Ouk-eE-hCJ"/>
+                                                    <constraint firstItem="q2b-R5-h8h" firstAttribute="top" secondItem="h8C-5Q-Apf" secondAttribute="bottom" constant="3" id="Ud0-SJ-hPc"/>
+                                                    <constraint firstItem="h8C-5Q-Apf" firstAttribute="top" secondItem="Yv4-bK-11k" secondAttribute="bottom" constant="4" id="cRN-Ng-1Ik"/>
+                                                    <constraint firstItem="q2b-R5-h8h" firstAttribute="leading" secondItem="z6J-7O-TVw" secondAttribute="leading" id="d0C-zj-aIP"/>
+                                                    <constraint firstItem="Yv4-bK-11k" firstAttribute="leading" secondItem="z6J-7O-TVw" secondAttribute="leading" id="f0y-Jb-x5m"/>
+                                                    <constraint firstItem="JSh-Qg-4kV" firstAttribute="top" secondItem="z6J-7O-TVw" secondAttribute="top" id="h9t-iR-qr2"/>
+                                                    <constraint firstItem="Yv4-bK-11k" firstAttribute="top" secondItem="JSh-Qg-4kV" secondAttribute="bottom" constant="8" id="qwP-n8-5Ue"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Yv4-bK-11k" secondAttribute="trailing" id="rv0-wH-r2O"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outlet property="imagemViagem" destination="JSh-Qg-4kV" id="VZB-v8-iij"/>
+                                                    <outlet property="labelPreco" destination="q2b-R5-h8h" id="DQO-oA-nZd"/>
+                                                    <outlet property="labelQuantidadeDias" destination="h8C-5Q-Apf" id="Zep-l7-wZ1"/>
+                                                    <outlet property="labelTitulo" destination="Yv4-bK-11k" id="ssx-Iy-uhg"/>
+                                                </connections>
+                                            </collectionViewCell>
+                                        </cells>
+                                    </collectionView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Cdk-T2-7tP" firstAttribute="bottom" secondItem="72o-u5-Dtx" secondAttribute="bottom" id="Hwr-0p-HKG"/>
+                            <constraint firstItem="Cdk-T2-7tP" firstAttribute="trailing" secondItem="72o-u5-Dtx" secondAttribute="trailing" constant="16" id="IND-RW-ApB"/>
+                            <constraint firstItem="72o-u5-Dtx" firstAttribute="top" secondItem="Cdk-T2-7tP" secondAttribute="top" id="mhQ-5W-2c9">
+                                <variation key="heightClass=regular-widthClass=regular" constant="8"/>
+                            </constraint>
+                            <constraint firstItem="72o-u5-Dtx" firstAttribute="leading" secondItem="Cdk-T2-7tP" secondAttribute="leading" constant="16" id="nSB-ab-pJO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Cdk-T2-7tP"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="pacotes" image="icon_package" id="HCE-sB-kGd"/>
+                    <connections>
+                        <outlet property="colecaoPacotesViagem" destination="7nO-3z-HT9" id="AUO-QY-xuw"/>
+                        <outlet property="labelContadorPacotes" destination="M9E-gw-dZ8" id="CgX-SV-l8s"/>
+                        <outlet property="pesquisarViagens" destination="325-Hm-Nfs" id="s1I-1v-Si2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aNf-rM-dPz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="983.59375" y="117.77343749999999"/>
+        </scene>
+        <!--DetalhesV Iagens View Controller-->
+        <scene sceneID="jfw-kY-leQ">
+            <objects>
+                <viewController storyboardIdentifier="detalhes" id="m1F-vv-21i" customClass="DetalhesVIagensViewController" customModule="AluraViagens" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BK3-fz-WMk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5ej-Yc-RwN">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="185"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="185" id="YDJ-Fp-ub0">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="250"/>
+                                    </constraint>
+                                </constraints>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FEs-iO-Dhn">
+                                <rect key="frame" x="7.5" y="185" width="359" height="482"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="k7i-PI-MEU">
+                                        <rect key="frame" x="0.0" y="0.0" width="360" height="444.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PORTO DE GALINHAS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="99l-zr-nko">
+                                                <rect key="frame" x="0.0" y="0.0" width="360" height="31.5"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="23"/>
+                                                <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pacote: Hotel + café da manhã" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LPF-Xv-VBc">
+                                                <rect key="frame" x="0.0" y="31.5" width="360" height="23"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                                <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7 dias" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Umo-02-Tpt">
+                                                <rect key="frame" x="0.0" y="54.5" width="360" height="23"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                                <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pjR-yK-M0g">
+                                                <rect key="frame" x="0.0" y="77.5" width="360" height="63"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="válido para o período de:" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vXk-Ji-y7a">
+                                                        <rect key="frame" x="0.0" y="0.0" width="180" height="63"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="13"/>
+                                                        <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="DaY-l4-BvV">
+                                                        <rect key="frame" x="180" y="0.0" width="180" height="63"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="a partir de:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ems-Qj-t6u">
+                                                                <rect key="frame" x="0.0" y="0.0" width="180" height="18"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="18" id="PnZ-X0-xkG"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="13"/>
+                                                                <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.490,99 " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ilw-q9-qPh">
+                                                                <rect key="frame" x="0.0" y="18" width="180" height="27"/>
+                                                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="20"/>
+                                                                <color key="textColor" red="0.0" green="0.5490196078431373" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+ taxas | em até 12x" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hYd-Fo-f8s">
+                                                                <rect key="frame" x="0.0" y="45" width="180" height="18"/>
+                                                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="13"/>
+                                                                <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="Ilw-q9-qPh" firstAttribute="centerY" secondItem="DaY-l4-BvV" secondAttribute="centerY" id="Gqx-Gk-vHH"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2ea-DS-GBx">
+                                                <rect key="frame" x="0.0" y="140.5" width="360" height="1"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="Ugw-Rm-UNQ"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="o que está incluso:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="elv-M7-z0v">
+                                                <rect key="frame" x="0.0" y="141.5" width="360" height="22"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                                <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Pvo-La-KPn">
+                                                <rect key="frame" x="0.0" y="163.5" width="360" height="90"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="D0Z-Ew-7uS">
+                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="90"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9hp-YH-jGL">
+                                                                <rect key="frame" x="0.0" y="0.0" width="120" height="90"/>
+                                                                <subviews>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_airplane" translatesAutoresizingMaskIntoConstraints="NO" id="i3j-yn-r5H">
+                                                                        <rect key="frame" x="43" y="13" width="35" height="35"/>
+                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="passagem aérea" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pcB-DK-hTE">
+                                                                        <rect key="frame" x="0.0" y="45" width="107" height="45"/>
+                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
+                                                                        <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </view>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="90" id="7ZT-KX-pxK"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="RXU-A1-KEO">
+                                                        <rect key="frame" x="120" y="0.0" width="120" height="90"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CdF-sm-Ehr">
+                                                                <rect key="frame" x="0.0" y="0.0" width="120" height="90"/>
+                                                                <subviews>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_hotel" translatesAutoresizingMaskIntoConstraints="NO" id="iad-o6-cl7">
+                                                                        <rect key="frame" x="36" y="8" width="35" height="35"/>
+                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="hotel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yiz-xG-c2X">
+                                                                        <rect key="frame" x="-1" y="44" width="107" height="45"/>
+                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                                                        <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="jGW-ye-GAj">
+                                                        <rect key="frame" x="240" y="0.0" width="120" height="90"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="90D-3u-q6R">
+                                                                <rect key="frame" x="0.0" y="0.0" width="120" height="90"/>
+                                                                <subviews>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_breakfast" translatesAutoresizingMaskIntoConstraints="NO" id="sBJ-I3-SRa">
+                                                                        <rect key="frame" x="41" y="6" width="35" height="35"/>
+                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="café da manhã" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSs-Es-zoK">
+                                                                        <rect key="frame" x="-1" y="53" width="107" height="30"/>
+                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                                                        <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </view>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="90" id="bfl-8c-hkZ"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eNi-cq-CEX">
+                                                <rect key="frame" x="0.0" y="253.5" width="360" height="1"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="Hus-hA-oWu"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CARTÃO DE CRÉDITO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aIs-aQ-7PJ">
+                                                <rect key="frame" x="0.0" y="254.5" width="360" height="20"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
+                                                <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="PIB-6W-mud">
+                                                <rect key="frame" x="0.0" y="274.5" width="360" height="170"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="número do cartão" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iEC-Mh-7Of">
+                                                        <rect key="frame" x="0.0" y="0.0" width="360" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="8mr-xV-kWD"/>
+                                                        </constraints>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="nome do cartão" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FwP-3P-JVH">
+                                                        <rect key="frame" x="0.0" y="35" width="360" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="o4P-Tj-n3C"/>
+                                                        </constraints>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="namePhonePad"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="data de validade" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CIH-s6-iGv">
+                                                        <rect key="frame" x="0.0" y="70" width="360" height="30"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <connections>
+                                                            <action selector="textFieldEntrouFoco:" destination="m1F-vv-21i" eventType="editingDidBegin" id="vOY-KA-oVc"/>
+                                                        </connections>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2hZ-gr-8gv">
+                                                        <rect key="frame" x="0.0" y="105" width="360" height="30"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                    </textField>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qzE-eQ-kKl">
+                                                        <rect key="frame" x="0.0" y="140" width="360" height="30"/>
+                                                        <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="360" id="bBw-6g-xVL"/>
+                                                        </constraints>
+                                                        <state key="normal" title="finalizar compra">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="botaoFinalizarCompra:" destination="m1F-vv-21i" eventType="touchUpInside" id="0SR-Ov-3Nd"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="qzE-eQ-kKl" firstAttribute="leading" secondItem="PIB-6W-mud" secondAttribute="leading" id="SoM-ce-j99"/>
+                                                    <constraint firstAttribute="trailing" secondItem="qzE-eQ-kKl" secondAttribute="trailing" id="xTW-SB-2Zk"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="pjR-yK-M0g" firstAttribute="top" secondItem="LPF-Xv-VBc" secondAttribute="bottom" constant="23" id="DwX-c7-Si0"/>
+                                            <constraint firstItem="PIB-6W-mud" firstAttribute="top" secondItem="eNi-cq-CEX" secondAttribute="bottom" constant="20" id="csu-AB-NVK"/>
+                                            <constraint firstItem="Pvo-La-KPn" firstAttribute="top" secondItem="pjR-yK-M0g" secondAttribute="bottom" constant="23" id="qXU-2H-b6U"/>
+                                            <constraint firstItem="2ea-DS-GBx" firstAttribute="top" secondItem="Umo-02-Tpt" secondAttribute="bottom" constant="63" id="xgk-Eg-Xid"/>
+                                            <constraint firstItem="Umo-02-Tpt" firstAttribute="top" secondItem="99l-zr-nko" secondAttribute="bottom" constant="23" id="yPz-af-1BC"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="k7i-PI-MEU" firstAttribute="leading" secondItem="FEs-iO-Dhn" secondAttribute="leading" id="7xr-JO-XjG"/>
+                                    <constraint firstItem="k7i-PI-MEU" firstAttribute="top" secondItem="FEs-iO-Dhn" secondAttribute="top" id="Fjx-Rg-4Mu"/>
+                                    <constraint firstAttribute="trailing" secondItem="k7i-PI-MEU" secondAttribute="trailing" id="Vbe-Or-bqV"/>
+                                    <constraint firstAttribute="bottom" secondItem="k7i-PI-MEU" secondAttribute="bottom" id="w3W-gy-OfZ"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rko-5w-ohb">
+                                <rect key="frame" x="7" y="20" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="icon_back">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="botaoVoltar:" destination="m1F-vv-21i" eventType="touchUpInside" id="deb-H9-0zy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5ej-Yc-RwN" firstAttribute="top" secondItem="BK3-fz-WMk" secondAttribute="top" id="7fe-hE-7am"/>
+                            <constraint firstItem="5ej-Yc-RwN" firstAttribute="centerX" secondItem="FEs-iO-Dhn" secondAttribute="centerX" id="KuP-oW-wBN"/>
+                            <constraint firstItem="FEs-iO-Dhn" firstAttribute="top" secondItem="5ej-Yc-RwN" secondAttribute="bottom" id="TPQ-0a-01A"/>
+                            <constraint firstItem="FEs-iO-Dhn" firstAttribute="leading" secondItem="qs4-XV-Gof" secondAttribute="leading" constant="8" id="iiF-oN-69t"/>
+                            <constraint firstItem="FEs-iO-Dhn" firstAttribute="bottom" secondItem="qs4-XV-Gof" secondAttribute="bottom" id="tfw-8C-jpI"/>
+                            <constraint firstItem="5ej-Yc-RwN" firstAttribute="leading" secondItem="qs4-XV-Gof" secondAttribute="leading" id="xpb-EL-mds"/>
+                            <constraint firstItem="5ej-Yc-RwN" firstAttribute="centerX" secondItem="BK3-fz-WMk" secondAttribute="centerX" id="zW2-ok-NUj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qs4-XV-Gof"/>
+                    </view>
+                    <connections>
+                        <outlet property="imagemPacoteViagem" destination="5ej-Yc-RwN" id="jjW-VB-WzT"/>
+                        <outlet property="labelDataViagem" destination="vXk-Ji-y7a" id="duj-kN-pqo"/>
+                        <outlet property="labelDescricaoPacoteViagem" destination="LPF-Xv-VBc" id="dHT-m4-i3r"/>
+                        <outlet property="labelPrecoPacoteViagem" destination="Ilw-q9-qPh" id="wDr-RF-H2p"/>
+                        <outlet property="labelQuantidadeDias" destination="Umo-02-Tpt" id="oM5-a6-pfV"/>
+                        <outlet property="labelTituloPacoteViagem" destination="99l-zr-nko" id="Zen-th-uhu"/>
+                        <outlet property="scrollPrincipal" destination="FEs-iO-Dhn" id="iwa-nQ-lJe"/>
+                        <outlet property="textFieldData" destination="CIH-s6-iGv" id="85s-Es-JHI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q5s-dq-6MU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1728.8" y="116.49175412293854"/>
+        </scene>
+        <!--Confirmacao Pagamento View Controller-->
+        <scene sceneID="kpj-Kc-aEC">
+            <objects>
+                <viewController storyboardIdentifier="confirmacaoPagamento" id="nYI-q9-Quf" customClass="ConfirmacaoPagamentoViewController" customModule="AluraViagens" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7aF-hI-N3n">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="plG-3x-rXy">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Compra realizada com sucesso!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l14-n4-kj4">
+                                        <rect key="frame" x="62" y="55" width="251" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PARABÉNS!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0Y-h6-ziF">
+                                        <rect key="frame" x="113" y="23" width="149" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="23"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.96862745098039216" green="0.68235294117647061" blue="0.30588235294117649" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Iab-y1-TJL"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ShM-aT-BIu">
+                                <rect key="frame" x="8" y="127" width="359" height="345"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confira o resumo da compra:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pw5-8w-1MS">
+                                        <rect key="frame" x="0.0" y="0.0" width="359" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="Zx3-FP-gJg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                        <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vf0-Zr-ygV">
+                                        <rect key="frame" x="0.0" y="29" width="359" height="130"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="130" id="Gqg-6u-kDN"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PORTO DE GALINHAS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fti-UA-K35">
+                                        <rect key="frame" x="0.0" y="164" width="359" height="21"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="23"/>
+                                        <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lQM-5T-OOr">
+                                        <rect key="frame" x="0.0" y="190" width="359" height="1"/>
+                                        <color key="backgroundColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="oCN-As-Wew"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resort Porto de Galinhas" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HOu-Ld-ecv">
+                                        <rect key="frame" x="0.0" y="196" width="359" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                        <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8~15 de agosto" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Up-gO-xqn">
+                                        <rect key="frame" x="0.0" y="224.5" width="359" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                        <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 adultos" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k3c-lu-weC">
+                                        <rect key="frame" x="0.0" y="253" width="359" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                        <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hotel + café da manhã" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2CV-Nx-RBO">
+                                        <rect key="frame" x="0.0" y="281.5" width="359" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                        <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zuS-IH-0Rx">
+                                        <rect key="frame" x="0.0" y="310" width="359" height="35"/>
+                                        <color key="backgroundColor" red="0.2196078431372549" green="0.71372549019607845" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="iFd-GU-IYM"/>
+                                        </constraints>
+                                        <state key="normal" title="voltar para home">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="botaoVoltarHome:" destination="nYI-q9-Quf" eventType="touchUpInside" id="7aw-ju-ttP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="lQM-5T-OOr" firstAttribute="top" secondItem="vf0-Zr-ygV" secondAttribute="bottom" constant="31" id="Gg3-OZ-9CE"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="plG-3x-rXy" firstAttribute="trailing" secondItem="Ab9-CH-zoJ" secondAttribute="trailing" id="2qo-95-Fzu"/>
+                            <constraint firstItem="plG-3x-rXy" firstAttribute="leading" secondItem="Ab9-CH-zoJ" secondAttribute="leading" id="DAd-sX-KZz"/>
+                            <constraint firstAttribute="trailing" secondItem="ShM-aT-BIu" secondAttribute="trailing" constant="8" id="Tbo-id-bEx"/>
+                            <constraint firstItem="plG-3x-rXy" firstAttribute="top" secondItem="7aF-hI-N3n" secondAttribute="top" id="W6i-yg-6l8"/>
+                            <constraint firstItem="ShM-aT-BIu" firstAttribute="top" secondItem="plG-3x-rXy" secondAttribute="bottom" constant="27" id="ZvT-FG-DWN"/>
+                            <constraint firstItem="ShM-aT-BIu" firstAttribute="leading" secondItem="Ab9-CH-zoJ" secondAttribute="leading" constant="8" id="m9P-4i-xQc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ab9-CH-zoJ"/>
+                    </view>
+                    <connections>
+                        <outlet property="botaoVoltarHome" destination="zuS-IH-0Rx" id="8uX-qZ-s8r"/>
+                        <outlet property="imagemPacoteViagem" destination="vf0-Zr-ygV" id="8cg-nU-uIZ"/>
+                        <outlet property="labelDataPacoteViagem" destination="0Up-gO-xqn" id="XC9-Kd-JF7"/>
+                        <outlet property="labelDescricaoPacote" destination="2CV-Nx-RBO" id="tjF-kA-T75"/>
+                        <outlet property="labelHotelPacoteViagem" destination="HOu-Ld-ecv" id="shw-Uh-LoC"/>
+                        <outlet property="labelQuantidadePessoas" destination="k3c-lu-weC" id="gkK-mK-moe"/>
+                        <outlet property="labelTituloPacoteViagem" destination="Fti-UA-K35" id="eAY-ZT-fKe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mJH-wT-8sb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2514.4000000000001" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_airplane" width="25" height="25"/>
+        <image name="icon_back" width="50" height="50"/>
+        <image name="icon_breakfast" width="50" height="50"/>
+        <image name="icon_hotel" width="50" height="50"/>
+        <image name="icon_package" width="25" height="25"/>
+        <image name="icon_search" width="25" height="25"/>
+    </resources>
+</document>
